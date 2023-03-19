@@ -1,0 +1,7 @@
+{
+  "name": "App_Tres_Rayas;",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

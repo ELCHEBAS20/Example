@@ -1,0 +1,37 @@
+<ion-row>
+  <ng-container *ngFor="let item of IteradorValores;index as index">
+    <ion-col *ngIf="index<3">
+      <div [ngClass]="{'txt_bx':true}" class="div{{index}}" (click)="function_Jugada(index)">
+      </div>
+    </ion-col>
+  </ng-container>
+</ion-row>
+<ion-row>
+  <ng-container *ngFor="let item of IteradorValores;index as index">
+    <ion-col *ngIf="index>=3 && index<=5">
+      <div [ngClass]="{'txt_bx':true}" class="div{{index}}" (click)="function_Jugada(index)">
+      </div>
+    </ion-col>
+  </ng-container>
+</ion-row>
+<ion-row>
+  <ng-container *ngFor="let item of IteradorValores;index as index">
+    <ion-col *ngIf="index>5">
+      <div [ngClass]="{'txt_bx':true}" class="div{{index}}" (click)="function_Jugada(index)">
+      </div>
+    </ion-col>
+  </ng-container>
+</ion-row>
+<br>
+<br>
+<div align="center">
+  <ng-container *ngIf="notWinner">
+    <h2>Hay ganador y es el valor: {{RstFinal}}</h2>
+  </ng-container>
+</div>
+
+<div align="center">
+  <ng-container *ngIf="isVisible">
+    <h2>Hay empate entre estos jugadores.</h2>
+  </ng-container>
+</div>

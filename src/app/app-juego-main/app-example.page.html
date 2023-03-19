@@ -1,0 +1,20 @@
+<app-saluda></app-saluda>
+
+<ion-content [fullscreen]="true" class="fondo_main">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+    </ion-toolbar>
+  </ion-header>
+
+  <!-- Esto lo valido con localstorage -->
+  <div *ngIf="ValorLocalstorage=='Computer'">
+    <app-player-computer></app-player-computer>
+  </div>
+
+  <div *ngIf="ValorLocalstorage=='Player'">
+    <app-section-player></app-section-player>
+  </div>
+
+</ion-content>
+
+<app-footer></app-footer>

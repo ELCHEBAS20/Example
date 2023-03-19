@@ -1,0 +1,74 @@
+<ion-grid>
+  <!-- Fila1 -->
+  <!-- <ion-button color="dark" id="btn-puntaje" expand="block"><ion-icon
+      name="accessibility-outline"></ion-icon>&nbsp;Puntaje-Final</ion-button> -->
+
+  <div style="position: relative;top: -50px;">
+    <p>Puntaje del jugador:&nbsp;<strong>{{PuntajePlayers.PuntajePlayer}}</strong></p>
+    <p>&nbsp;</p>
+    <p>Puntaje del Computador:&nbsp;<strong>{{PuntajePlayers.PuntajeComputer}}</strong></p>
+  </div>
+
+  <ion-row>
+    <ion-col>
+      <div [ngClass]="{'txt_bx':true,'div_0':true}" [ngStyle]="{'pointer-events': DisabledComponent ? '':'none'}"
+        (click)="function_PartidaInicial(0)">
+      </div>
+    </ion-col>
+    <ion-col>
+      <div [ngClass]="{'txt_bx':true,'div_1':true}" [ngStyle]="{'pointer-events': DisabledComponent ? '':'none'}"
+        (click)="function_PartidaInicial(1)">
+      </div>
+    </ion-col>
+    <ion-col>
+      <div [ngClass]="{'txt_bx':true,'div_2':true}" [ngStyle]="{'pointer-events': DisabledComponent ? '':'none'}"
+        (click)="function_PartidaInicial(2)">
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <!-- Fila2 -->
+
+  <ion-row>
+    <ion-col>
+      <div [ngClass]="{'txt_bx':true,'div_3':true}" [ngStyle]="{'pointer-events': DisabledComponent ? '':'none'}"
+        (click)="function_PartidaInicial(3)">
+      </div>
+    </ion-col>
+    <ion-col>
+      <div [ngClass]="{'txt_bx':true,'div_4':true}" [ngStyle]="{'pointer-events': DisabledComponent ? '':'none'}"
+        (click)="function_PartidaInicial(4)">
+      </div>
+    </ion-col>
+    <ion-col>
+      <div [ngClass]="{'txt_bx':true,'div_5':true}" [ngStyle]="{'pointer-events': DisabledComponent ? '':'none'}"
+        (click)="function_PartidaInicial(5)">
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <!-- Fila3 -->
+
+  <ion-row>
+    <ion-col>
+      <div [ngClass]="{'txt_bx':true,'div_6':true}" [ngStyle]="{'pointer-events': DisabledComponent ? '':'none'}"
+        (click)="function_PartidaInicial(6)">
+      </div>
+    </ion-col>
+    <ion-col>
+      <div [ngClass]="{'txt_bx':true,'div_7':true}" [ngStyle]="{'pointer-events': DisabledComponent ? '':'none'}"
+        (click)="function_PartidaInicial(7)">
+      </div>
+    </ion-col>
+    <ion-col>
+      <div [ngClass]="{'txt_bx':true,'div_8':true}" [ngStyle]="{'pointer-events': DisabledComponent ? '':'none'}"
+        (click)="function_PartidaInicial(8)">
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <!-- <ion-text color="danger">
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<small>¡En estos momentos el juego ha terminado!</small>
+  </ion-text> -->
+
+</ion-grid>

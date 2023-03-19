@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title><a routerLink="/home"><ion-icon name="arrow-back-outline"></ion-icon></a>&nbsp;<strong>Jugador vs
+        Jugador</strong></ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+  <ion-card color="dark">
+    <ion-card-header>
+      <ion-card-title>Elige tu valor correspondiente.</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+
+      <form [formGroup]="formGroup" (ngSubmit)="OnSubmitData()">
+        <ion-item>
+          <ion-label position="floating">Jugador #1:</ion-label>
+          <ion-input name="Player1" maxlength="1" minlength="1" formControlName="player1"
+            onkeypress="if(event.keyCode>=48 && event.keyCode<=59){return false}"
+            placeholder="Ingrese valor:"></ion-input>
+        </ion-item>
+        <br>
+        <br>
+        <ion-item>
+          <ion-label position="floating">Jugador #2:</ion-label>
+          <ion-input name="Player2" maxlength="1" minlength="1" formControlName="player2"
+            onkeypress="if(event.keyCode>=48 && event.keyCode<=59){return false}"
+            placeholder="Ingrese valor: "></ion-input>
+        </ion-item>
+        <br>
+        <br>
+        <ion-button type="submit" expand="block">Empezar a jugar.</ion-button>
+      </form>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
+
+<app-footer></app-footer>
