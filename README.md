@@ -1,1 +1,2 @@
 # JUEGO_TRIQUI
+# Triqui_IONIC
